@@ -1,0 +1,63 @@
+body {
+    background-image: linear-gradient(to right, rgb(255, 0, 0) 0%, rgb(0, 255, 0) 50%, rgb(0, 0, 255) 100%);
+    background-size: 500% 500%;
+    animation: changeBackground 30s infinite ease alternate;
+    -webkit-animation: changeBackground 30s infinite ease alternate;
+    -moz-animation: changeBackground 30s infinite ease alternate;
+}
+
+#pointerPos, #circlePos {
+    position: absolute;
+    left: 15px;
+    font-size: 20px;
+    border-bottom: 2px solid #000000;
+    font-weight: bold;
+}
+
+#pointerPos {
+    top: 20px;
+}
+
+#circlePos {
+    top: 60px;
+}
+
+.canvasContainer {
+    width: 100%;
+    min-width: 800px;
+    text-align: center;
+    padding: 50px 0px;
+}
+
+#canva {
+    border: 5px solid #000000;
+    border-radius: 50%;
+    background: #ffffff88;
+}
+
+@keyframes changeBackground {
+    0% {
+        background-position:0% 0%;
+    }
+    100% {
+        background-position:100% 100%;
+    }
+}
+
+@-webkit-keyframes changeBackground {
+    0% {
+        background-position:0% 0%;
+    }
+    100% {
+        background-position:100% 100%;
+    }
+}
+
+@-moz-keyframes changeBackground {
+    0% {
+        background-position:0% 0%;
+    }
+    100% {
+        background-position:100% 100%;
+    }
+}
